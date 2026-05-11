@@ -3,11 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mohammed Minul Islam - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    lst line of code
-    <h1>Welcome student</h1>
-    <div>This is our git fundamental class</div>
+    <header id="hero">
+        <nav id="navbar">
+            <div class="nav-container">
+                <h1 class="logo">MMI</h1>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-grid container">
+            <div class="hero-copy">
+                <p class="hero-intro">Hello, I'm</p>
+                <h1>Mohammed Minul Islam</h1>
+                <div class="hero-role-wrapper">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">Passionate software developer creating elegant solutions to complex problems. I build web applications, APIs, and AI-powered experiences for agriculture and real-world industries.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary"><span class="btn-icon">⬇</span> Download CV</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/mamun657" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/mohammed-minul-islam" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-image-block">
+                <div class="hero-image-frame">
+                    <img src="images.jpg" alt="Mohammed Minul Islam" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Markup language for web development.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Styling language for web design.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Programming language for interactivity.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React.js</h3>
+                    <p>Library for building user interfaces.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Flutter</h3>
+                    <p>Framework for cross-platform apps.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Firebase</h3>
+                    <p>Backend platform for apps.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Node.js</h3>
+                    <p>Runtime for server-side JavaScript.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for modern apps.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>AI/ML Basics</h3>
+                    <p>Fundamentals of artificial intelligence and machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>KrishokDhoni</h3>
+                    <p>AI-powered agriculture app with crop disease detection, recommendation system, weather updates, and voice support.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Apnar Dokan</h3>
+                    <p>Full-stack e-commerce platform with authentication, admin dashboard, shopping cart, and AI assistant.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter">
+        <div class="container">
+            <h2>Live Visitor Counter</h2>
+            <div class="counter-card">
+                <h3>Visitors</h3>
+                <p id="visitor-count">0</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age">
+                    <span class="error" id="age-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" maxlength="1000"></textarea>
+                    <span class="error" id="message-error"></span>
+                    <p id="char-count">Characters: 0/1000</p>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2023 Mohammed Minul Islam. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/mamun657" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/mohammed-minul-islam" target="_blank">LinkedIn</a>
+            </div>
+            <button id="back-to-top">Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
